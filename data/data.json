@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "id" : 1,
+            "name" : "Landlords real estate",
+            "description" : "Online platform that links land owners or house owners  and buyers.",
+            "image" : "/landlords-real-estate.jpg"
+        }
+    ]
+}

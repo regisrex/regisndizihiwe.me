@@ -18,7 +18,7 @@ export default function Navbar() {
     const pathname = usePathname()
     console.log(pathname)
     return (
-        <div className="flex items-center justify-between py-10 px-[4vw] border-b">
+        <div className="flex items-center  sticky top-0  z-50 bg-white/80  backdrop-blur-md justify-between py-10 px-[4vw]">
             <h1 className="text-4xl font-medium">Regis&nbsp;Rex.</h1>
             <div className="flex items-center gap-14">
                 {

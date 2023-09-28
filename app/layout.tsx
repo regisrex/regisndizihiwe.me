@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={" text-lg font-grotesk  text-neutral-900"}>
+      <body className={" text-lg font-grotesk  selection:bg-black selection:text-white text-neutral-900"}>
         <Navbar />
         <div className='px-[4vw]'>
           {children}
