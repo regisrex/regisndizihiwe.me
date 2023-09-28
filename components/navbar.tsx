@@ -24,7 +24,7 @@ export default function Navbar() {
                 {
                     NAV_LINKS.map((link, index) => (
                         <Link href={`${link.href}`} key={index}>
-                            <span className={`capitalize ${link.href == pathname && "underline underline-offset-8 "}`}> {link.title}</span>
+                            <span className={`capitalize ${link.href == pathname && "underline underline-offset-8  decoration-1"}`}> {link.title}</span>
                         </Link>
                     ))
                 }
