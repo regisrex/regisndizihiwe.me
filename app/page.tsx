@@ -8,7 +8,7 @@ export default function Home() {
         <p>Sup nerd!  It&apos;s nice that you&apos;ve reached here. </p>
         <p> I&apos;m a software programmer, student at Rwanda Coding Academy and member of the Hack Club  where I learn from my fellow teens around the world. </p>
         <p>Currently, I code in Typescript, Go and I&apos;m planning to add Rust, but I actually enjoy coding in any strongly typed language apart from Java, seriously, Java!</p>
-        <p>In my spare time, i build random things might be useful in some occassions or just scroll into my github feed, that&apos;s where I get some fresh air! </p>
+        <p>In my spare time, i build random things that can be useful in some occassions or just scroll into my github feed, that&apos;s where I get some fresh air! </p>
         <p>For a link up, ping me on <a href="mailto:hey@regisndizihiwe.me" className="underline-offset-4 hover:decoration-neutral-200 underline decoration-neutral-600">hey@regisndizihiwe.me</a></p>
 
         <div className="flex items-center gap-3">
