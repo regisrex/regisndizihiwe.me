@@ -4,7 +4,7 @@ export default function Home() {
     <main className="bg-neutral-900 min-h-screen flex flex-col  justify-between  ">
 
       <div className=" flex flex-col gap-4 py-24  px-[26vw]">
-        <h1 className="text-2xl font-bold"> &gt;_ R&eacute;gis NDIZIHIWE</h1>
+        <h1 className="text-2xl font-bold">R&eacute;gis NDIZIHIWE</h1>
         <p>Sup nerd!  It&apos;s nice that you&apos;ve reached here. </p>
         <p> I&apos;m a software programmer, student at Rwanda Coding Academy and member of the Hack Club  where I learn from my fellow teens around the world. </p>
         <p>Currently, I code in Typescript, Go and I&apos;m planning to add Rust, but I actually enjoy coding in any strongly typed language apart from Java, seriously, Java!</p>
