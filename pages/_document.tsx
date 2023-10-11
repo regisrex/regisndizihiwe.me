@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="icon"
-            href="/favicon.ico"
+            href="/favicon.png"
           ></link>
         </Head>
         <body>
