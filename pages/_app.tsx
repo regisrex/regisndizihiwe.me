@@ -13,19 +13,19 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
       <DefaultSeo
-        title="Regis NDIZIHIWE's Blog"
-        description='It\s Rex, Welcome to my spot on internet'
+        title="Regis NDIZIHIWE |  Blog"
+        description='Welcome to my spot on internet'
         openGraph={{
           type: 'website',
           locale: 'en_IE',
           url: 'https://www.regisndizihiwe.me/',
-          siteName: 'Regis NDIZIHIWE\' Blog',
+          siteName: 'Regis NDIZIHIWE - Personal site and blog',
           images: [
-            { 
-              url: "https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            {
+              url: "/og-img.png",
               width: 800,
               height: 600,
-              alt: 'Regis NDIZIHIWE\' Blog',
+              alt: 'www.regisndizihiwe.me',
               type: 'image/jpeg',
 
             }
@@ -35,10 +35,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         twitter={{
           handle: '@regisrex',
           site: 'www.regisndizihiwe.me',
-          cardType: 'It\s Rex, Welcome to my spot on internet',
+          cardType: 'image/png',
         }}
       />
-      <div className={"font-general-sans bg-neutral-900 min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[26vw] "}>
+      <div className={"font-general-sans bg-[#050505] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[26vw] "}>
         <Nav />
         <Component {...pageProps} />
         <Footer />

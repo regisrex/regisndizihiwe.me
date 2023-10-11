@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div>
         <div className=" flex flex-col gap-4 ">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             <p>Sup nerd! Welcome to my spot.</p>
             <p>I write code, I code in Typescript, Go and I&apos;m planning to add Rust, but I actually enjoy coding in any strongly typed language apart from Java, seriously, Java!</p>
             <p>In my spare time, i build random things that can be useful in some occassions or just scroll into my github feed, that&apos;s where I get some fresh air! </p>
