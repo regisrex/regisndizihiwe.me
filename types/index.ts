@@ -3,5 +3,6 @@ export interface Blog {
     description? : String ,
     id : String ,
     tags : String[],
+    releaseDate : String,
     component? : React.ReactElement
 }

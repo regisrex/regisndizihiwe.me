@@ -9,7 +9,7 @@ export default function Home() {
           <Image src={RexImage.src} width={200} height={200} alt="Rex image" className="rounded-full w-[140px] overflow-clip  object-cover" />
         </div>
         <div className="flex flex-col justify-between gap-2">
-          <h1 className="text-2xl font-bold">R&eacute;gis NDIZIHIWE</h1>
+          <h1 className="text-2xl font-bold bg-gradient-to-br text-transparent from-blue-600 to-red-500 w-fit bg-clip-text">R&eacute;gis NDIZIHIWE</h1>
           <p className="opacity-60"> Software programmer, student at Rwanda Coding Academy, member of the Hack Club</p>
         </div>
       </div>
