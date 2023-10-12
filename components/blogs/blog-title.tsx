@@ -6,7 +6,7 @@ export default function BlogTitle({
     description,
     readTime
 }: {
-    id : string
+    id: string
     releaseDate: string,
     title: string,
     description: string,
@@ -23,7 +23,13 @@ export default function BlogTitle({
                     title: title,
                     description: description,
                     images: [
-                        { url: '/og-image.png', }
+                        {
+                            url: '/og-image.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'www.regisndizihiwe.me',
+                            type: 'image/png',
+                        }
                     ],
                     siteName: 'Regis NDIZIHIWE | Blog',
                 }}
