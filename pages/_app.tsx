@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           cardType: 'image/png',
         }}
       />
-      <div className={"font-general-sans bg-[#050505] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[26vw] "}>
+      <div className={"font-general-sans bg-[#1d1d1d] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[26vw] "}>
         <Nav />
         <Component {...pageProps} />
         <Footer />

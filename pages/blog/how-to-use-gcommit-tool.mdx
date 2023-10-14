@@ -1,32 +1,35 @@
 import BlogTitle  from "../../components/blogs/blog-title";
+import img from "../../content/images/how-to-use-gcommit.png";
+import Image from "next/image";
 
-<BlogTitle releaseDate="11th October 2023" id="how-to-use-gcm-tool" title="The new version and usage of gcm, a cli too to make conventional git commit messages" readTime="5 min" description="Later this week I was walking around in Github, searching for rust codebases and seeing what can be built with rust..."/>
-
+{/* ![How to use gcommit](img.src) */}
+<Image src={img.src} alt="gcommit src photo" width={400} height={300} className="w-full rounded-lg my-4" />
+<BlogTitle releaseDate="11th October 2023" id="how-to-use-gcommit-tool" title="The new version and usage of gcommit, a cli too to make conventional git commit messages" readTime="5 min" description="Later this week I was walking around in Github, searching for rust codebases and seeing what can be built with rust..."/>
 
 Later this week I was walking around in Github, searching for rust codebases and seeing what can be built with rust.
-I came accross a project called [gcm](https://github.com/veritem/gcm), which had this fuctionality of helping you write better conventional commit messages.
+I came accross a project called [gcommit](https://github.com/veritem/gcommit), which had this fuctionality of helping you write better conventional commit messages.
 I found thi interesting and as I was learning rust in those days, I folked it and coolified it 😉.
 
 #### How the tool was before
-It's only feature was just giving a dialog to fill in information about you commit once the user types `gcm` in their terminal which is the one that attracted me to take my  spare time and add more features in this tool.
-![Preview image, gcm v0.0.3](https://github.com/veritem/gcm/raw/main/assets/preview.png)
+It's only feature was just giving a dialog to fill in information about you commit once the user types `gcommit` in their terminal which is the one that attracted me to take my  spare time and add more features in this tool.
+![Preview image, gcommit v0.0.3](https://github.com/veritem/gcommit/raw/main/assets/preview.png)
 #### What I added 
 First, I started by adding a feature of commiting in a single line. used a crate called `clap`  to  handle args and add this whole feature, It's a awesome tool, most rustaceans use it.
 ```bash 
->_ gcm -c <type> -s <scope> -m <commit_message>
+>_ gcommit -c <type> -s <scope> -m <commit_message>
 ```
-Next, I added a feature of configuring gcm using a file so that development teams and open source  projects  can integrate `gcm` in their workflow.
+Next, I added a feature of configuring gcommit using a file so that development teams and open source  projects  can integrate `gcommit` in their workflow.
 I decided to use yaml instead of json, mainly because yaml is lightweight and easy to write, just like making indented lists.
 I also added a validation feature, which validates commit types and scopes based on the configurations.
 
-When you type `gcm` in terminal in your repo's base directory for the first time, it creates `.gcmconfig.yml` automatically with default  configurations.
+When you type `gcommit` in terminal in your repo's base directory for the first time, it creates `.gcommit.yml` automatically with default  configurations.
 ```bash 
->_ gcm
-Found no .gcmconfig.yml, creating a default one...
+>_ gcommit
+Found no .gcommit.yml, creating a default one...
 ```
 The default configurations look like this:
 ```yml
-# file-name: .gcmconfig.yml 
+# file-name: .gcommit.yml 
 classes:
   feat:   A new feature
   fix:    A bug fix
@@ -43,16 +46,12 @@ scopes:
 ```
 The default config is based on proper commit conventions accross the open source community.
 
-#### Getting started with gcm
-
-As I'm waiting for my pull request with all those features to be merged and the release of the new version, there no way to get this tool,
-what you can do is to pull the code from my repo [regisrex/gcm](https://github.com/regisrex/gcm) and build it locally.
-But I hope after code reviews and merging, the new version will be available as soon as possible.
-
-After installation, type `gcm --help` to get the cli help
+#### Getting started with gcommit
+The new version (v0.0.4) of gcommit is now released, you can  download a binary for your platform [here](https://github.com/veritem/gcommit/releases/tag/0.0.4)
+After installation, type `gcommit --help` to get the cli help
 ```cmd
-$ gcm --help
-Usage: gcm.exe [OPTIONS]
+$ gcommit --help
+Usage: gcommit.exe [OPTIONS]
 
 Options:
   -c, --class              Classification or type of commit

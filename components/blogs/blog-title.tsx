@@ -5,13 +5,15 @@ export default function BlogTitle({
     releaseDate,
     title,
     description,
-    readTime
+    readTime ,
+    image
 }: {
     id: string
     releaseDate: string,
     title: string,
     description: string,
-    readTime: string
+    readTime: string,
+    image : string
 }) {
     return (
         <>
