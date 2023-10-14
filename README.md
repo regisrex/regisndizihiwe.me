@@ -1,5 +1,6 @@
-
-- 👋 Hi, I’m [@regisrex](https://www.regisndizihiwe.me)
-- 🌱 I’m currently coolifying [gcm](https://github.com/regisrex/gcm)
-- 📫 How to reach me: [hey@regisndizihiwe.me](mailto:hey@regisndizihiwe.me)
+<pre>
+- 👋 Hi, I’m <a href="https://www.regisndizihiwe.me">@regisrex</a>
+- 🌱 I’m currently coolifying <a href="https://github.com/veritem/gcommit">gcommit</a>
+- 📫 Ping me at <a href="mailto:hey@regisndizihiwe.me">hey@regisndizihiwe.me</a>
+</pre>
 
