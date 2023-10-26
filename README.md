@@ -6,4 +6,4 @@
 <b>Sup nerd👋</b>--!>
 
 
-<p align="center"> <a href="https://www.regisndizihiwe.me">📃:blog</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">🌀:twitter</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">📨:hey@regisndizihiwe.me</a> </p>
+<p align="center"> <a href="https://www.regisndizihiwe.me">📃:: blog</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">🌀:: twitter</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">📨:: hey@regisndizihiwe.me</a> </p>
