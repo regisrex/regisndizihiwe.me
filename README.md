@@ -1,9 +1,6 @@
-<!-- <pre>
-- 👋 Hi, I’m <a href="https://www.regisndizihiwe.me">@regisrex</a>
-- 🌱 I’m currently coolifying <a href="https://github.com/veritem/gcommit">gcommit</a>
-- 📫 Ping me at <a href="mailto:hey@regisndizihiwe.me">hey@regisndizihiwe.me</a>
-</pre> 
-<b>Sup nerd👋</b>--!>
+###  Hey! I'm Rex👋
+I'm a <b>programmer👨‍💻</b> and <b>student📚</b>.
+I love <b>building</b> applications and tools <b>by writing code</b>.   
+Here you'll find some of my public work that I feel proud of. Feel free to go through them.
 
-
-<p align="center"> <a href="https://www.regisndizihiwe.me">📃:: blog</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">🌀:: twitter</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/regissrex">📨:: hey@regisndizihiwe.me</a> </p>
+For a link up, ping me on: [twitter](https://x.com/regisrex) &nbsp;[email](mailto:hey@regisndizihiwe.me) &nbsp;[website](https://regisndizihiwe.me)
