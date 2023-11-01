@@ -44,9 +44,9 @@ export default function BlogTitle({
                     cardType: 'image/png',
                 }}
             />
-            <div className="flex flex-col gap-2 mb-6 py-4 border-b border-neutral-800">
+            <div className="flex flex-col gap-2 mb-6 py-4  border-neutral-800">
                 <p className="opacity-60 font-sans italic">{releaseDate}</p>
-                <h3 className='text-2xl font-bold text-white'>{title}</h3>
+                <h3 className='text-4xl font-bold text-white'>{title}</h3>
                 {/* <h3 className='text-white/60 my-2'>{description}</h3> */}
                 <p className="opacity-60 flex justify-between"><span>{readTime}</span> <span className="font-bold capitalize">{language}</span></p>
             </div>

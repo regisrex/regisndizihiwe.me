@@ -3,17 +3,17 @@ import Nav from "@/components/common/nav";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import { type AppProps } from "next/app";
-import { Lato } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "../code-styles.css";
 import "../globals.css";
 
-const appFont = Lato({ subsets: ['latin'], weight: "400" , fallback: ['sans_serif'] })
+const appFont = DM_Sans({ subsets: ['latin'], weight: "400" , fallback: ['sans_serif'] })
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
       <DefaultSeo
-        title="Regis NDIZIHIWE |  Blog"
+        title="Regis NDIZIHIWE | Blog"
         description='Welcome to my spot on internet'
         openGraph={{
           type: 'website',
@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           cardType: 'image/png',
         }}
       />
-      <div className={" bg-[#2b2b2b] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] "+  appFont.className}>
+      <div className={" bg-[#050505] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] "+  appFont.className}>
         <Nav />
         <Component {...pageProps} />
         <Footer />
