@@ -3,11 +3,11 @@ import Nav from "@/components/common/nav";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import { type AppProps } from "next/app";
-import { DM_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../code-styles.css";
 import "../globals.css";
 
-const appFont = DM_Sans({ subsets: ['latin'], weight: "400" , fallback: ['sans_serif'] })
+const appFont = Inter({ subsets: ['latin'], weight: "400" , fallback: ['sans_serif'] })
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           cardType: 'image/png',
         }}
       />
-      <div className={" bg-[#050505] min-h-screen flex flex-col gap-4  text-white selection:bg-neutral-800 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] "+  appFont.className}>
+      <div className={" bg-neutral-900 min-h-screen flex flex-col gap-4  text-neutral-100 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] "+  appFont.className}>
         <Nav />
         <Component {...pageProps} />
         <Footer />

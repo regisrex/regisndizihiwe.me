@@ -20,7 +20,7 @@ export default function Nav() {
         else setTheme('dark')
     }
     return (
-        <div className="py-5 border-b border-white border-opacity-5      flex items-center justify-between">
+        <div className="py-5  flex items-center justify-between">
             <div className="flex items-center  w-full justify-between gap-4">
                 <Link href={'/'}> <Image src={"/favicon.png"} width={100} height={100} alt="" className="overflow-hidden w-8 h-8 rounded-full" draggable={false} /></Link>
                 <div className="w-fit flex items-center gap-4">
