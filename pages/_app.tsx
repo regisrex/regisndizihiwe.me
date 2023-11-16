@@ -16,8 +16,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
       <DefaultSeo
-        title="Regis NDIZIHIWE | Blog"
-        description='Welcome to my spot on internet'
+        title="Regis NDIZIHIWE | Webdev | Open Source"
+        description='Hey! Welcome to my spot on the internet'
         openGraph={{
           type: 'website',
           locale: 'en_IE',
