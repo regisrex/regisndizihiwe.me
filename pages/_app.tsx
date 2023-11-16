@@ -3,12 +3,11 @@ import Nav from "@/components/common/nav";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import { type AppProps } from "next/app";
-import { Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../code-styles.css";
 import "../globals.css";
 
-const appfont = Source_Serif_4({
-  weight : ['400'],
+const appfont = Inter({
   subsets : ['latin']
 })
 
