@@ -8,7 +8,7 @@ export default function Home() {
           <Image src={RexImage.src} width={120} height={120} alt="Rex image" className="rounded-full w-[70px] overflow-clip  object-cover" />
         </div>
         <div className="flex flex-col justify-between  gap-2">
-          <h1 className="text-4xl font-black bg-gradient-to-br">Hey there! I&apos;m Rex</h1>
+          <h1 className="text-4xl font-black bg-gradient-to-br">Hey! I&apos;m Rex</h1>
           <p className="opacity-90 italic">Programmer, Blogger, Hack clubber and Student.</p>
         </div>
       </div>
