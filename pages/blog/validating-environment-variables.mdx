@@ -21,7 +21,7 @@ export function generatToken(user){
   return jwt.sign({ 
     _id: user._id,
     role: user.role },
-    process.env.JWT_SECRET,    //  unvalidated env. variable was used here
+    process.env.JWT_SECRET,    //  non-validated env. variable was used here
     { expiresIn: "1d" }
   );
 }

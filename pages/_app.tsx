@@ -3,18 +3,19 @@ import Nav from "@/components/common/nav";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import { type AppProps } from "next/app";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "../code-styles.css";
 import "../globals.css";
 
-const appfont = Inter({
-  subsets : ['latin']
+const appfont = Inter_Tight({
+  subsets : ['latin'],
+  weight : ['400']
 })
 
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
+    <>
       <DefaultSeo
         title="Regis NDIZIHIWE | Webdev | Open Source"
         description='Hey! Welcome to my spot on the internet'
@@ -43,14 +44,13 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       />
       <div>
   
-      <div className={" bg-white min-h-screen  leading-7   flex flex-col gap-4   text-black ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] " + appfont.className}>
+      <div className={" bg-[#030303] min-h-screen  leading-7   flex flex-col gap-4   text-neutral-300 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] " + appfont.className}>
         <Nav />
         <Component {...pageProps} />
         <Footer />
       </div>
       </div>
-    </ThemeProvider>
-
+</>
   );
 };
 
