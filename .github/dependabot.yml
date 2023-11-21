@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: [depandabot]: "
+      prefix: "deps: "
     ignore:
       - dependency-name: "next"
       - dependency-name: "react"
