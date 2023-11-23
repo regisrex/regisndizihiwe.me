@@ -19,9 +19,6 @@ export default defineConfig({
       scrollbarWidth : '0px'
     }),
     presetWebFonts({
-      fonts: {
-        'intervar' : 'Intervar'
-      },
     }),
   ],
   theme: {
