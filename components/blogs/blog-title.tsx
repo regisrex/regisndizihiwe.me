@@ -1,7 +1,8 @@
+
 import generateRandomColor from "@/utils/randomColor";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
 import { useState } from "react";
-import BlogTitleBg from '@/assets/blog-title-bg.png'
 
 export default function BlogTitle({
     id,
@@ -51,10 +52,9 @@ export default function BlogTitle({
                     cardType: 'image/png',
                 }}
             />
-            <div className={`flex flex-col gap-2  mb-6 py-10  px-4 bg-cover bg-no-repeat`} style={{ backgroundImage: `url(${BlogTitleBg.src})`}}>
-                <p className="opacity-60 font-sans italic">{releaseDate}</p>
-                <h3 className='text-3xl font-bold'>{title}</h3>
-                {/* <h3 className='text-white/60 my-2'>{description}</h3> */}
+            <div className={`flex flex-col gap-2  mb-6   bg-cover bg-no-repeat`}    >
+                <p className="opacity-60 font-sans">{releaseDate}</p>
+                <h3 className='text-xl text-bluish-100 font-bold'>{title}</h3>
                 <p className="flex justify-between"><span>{readTime}</span> <span className=" bg-white/10 p-1 rounded-full px-3 capitalize">{language}</span></p>
             </div>
         </>

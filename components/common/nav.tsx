@@ -1,9 +1,10 @@
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 const navLinks = [
     {
-        title: 'about',
+        title: 'home',
         href: '/'
     },
     {
@@ -11,6 +12,8 @@ const navLinks = [
         href: '/blog'
     },
 ]
+
+
 export default function Nav() {
     const { theme, setTheme } = useTheme();
 
@@ -19,17 +22,27 @@ export default function Nav() {
         else if (theme == 'light') setTheme('dark')
         else setTheme('dark')
     }
-    return (
-        <div className="py-5   items-center justify-between top-0 flex backdrop-blur">
-            <div className="flex items-center  w-full gap-4">
-                <Link href={'/'} className="shadow-sm hover:shadow-lg"> <Image src={"/favicon.png"} width={100} height={100} alt="" className="overflow-hidden w-8 h-8 rounded-full" draggable={false} /></Link>
-                <div className="w-fit flex items-center gap-4">
-                    {
-                        navLinks.map((link, i) => <Link href={link.href} key={i} className="hover:underline  decoration-neutral-600 underline-offset-4">{link.title}</Link>)
-                    }
-                </div>
-            </div>
-            {/* <button onClick={toogleTheme} >theme</button> */}
-        </div>
+
+    const router = useRouter()
+    const [selected, setSelected] = useState('home')
+
+    useEffect(() => {
+        setSelected(router.pathname)
+    }, [router.pathname])
+
+    const checkMatch = (path: typeof router.pathname, selected: typeof navLinks[0]) => {
+        if (selected.title == 'home') return path == selected.href
+        if (selected.title == 'blog') return path.includes(selected.href)
+    }
+    return (    
+        <ul>
+            {navLinks.map((link, i) => <li key={i}>
+                <Link href={link.href} className='flex items-center max-w-[76px] my-2 hover:max-w-[84px] duration-500 gap-4'>
+                    <div className={`w-full uppercase  duration-100 h-[2px] ${checkMatch(selected, link) ? 'bg-bluish-100 h-[5px] font-semibold' : 'bg-bluish-200'}`} />
+                    <span className={`text-sm font-medium uppercase ${checkMatch(selected, link) ? 'text-bluish-100' : 'text-bluish-200'}`}>{link.title}</span>
+                </Link>
+            </li>
+            )}
+        </ul>
     )
 }

@@ -1,9 +1,6 @@
-import BlogTitle  from "../../components/blogs/blog-title";
-import img from "../../content/images/how-to-use-gcommit.png";
-import Image from "next/image";
+import BlogTitle from "../../components/blogs/blog-title";
+import Image from "next/image"
 
-{/* ![How to use gcommit](img.src) */}
-{/* <Image src={img.src} alt="gcommit src photo" width={400} height={300} className="w-full rounded-lg my-4" /> */}
 <BlogTitle releaseDate="Oct 2023" id="validating-environment-variables" title="Validating environment variables" readTime="3 min" description="The way that I use to prevent errors in production that are caused by undefined and or environment variables" language="typescript"/>
 
 #### Intro
@@ -28,7 +25,7 @@ export function generatToken(user){
 ```
 This code above is not sure that `process.env.JWT_ACCESS_TOKEN` is defined and is a valid jwt secret key, and this
 can cause problems when this function is called like what happened to me down here!
-![Error that occured once when JWT_ACCESS_TOKEN was not provided](/var-env-vars.png)
+{/* ![Error that occured once when JWT_ACCESS_TOKEN was not provided](/var-env-vars.png) */}
 
 #### Validating .env with zod
 To validate envirnment variables with zod, we need to first create a validation schema that we'll use to validate of course and then we'll directly trigger

@@ -1,15 +1,16 @@
-import Footer from "@/components/common/footer";
-import Nav from "@/components/common/nav";
+import BaseLayout from "@/layouts/base-layout";
 import { DefaultSeo } from "next-seo";
-import { ThemeProvider } from "next-themes";
 import { type AppProps } from "next/app";
-import { Inter_Tight } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../code-styles.css";
 import "../globals.css";
+import BlogTitleBg from '@/assets/blog-title-bg.png';
+import '@unocss/reset/tailwind.css';
+import 'uno.css';
+import Image from "next/image";
 
-const appfont = Inter_Tight({
-  subsets : ['latin'],
-  weight : ['400']
+const appfont = Inter({
+  subsets: ['latin']
 })
 
 
@@ -43,14 +44,18 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         }}
       />
       <div>
-  
-      <div className={" bg-[#030303] min-h-screen  leading-7   flex flex-col gap-4   text-neutral-300 ss:px-[2vw] sm:px-[5vw] md:px-[14vw] lg:px-[24vw] " + appfont.className}>
-        <Nav />
-        <Component {...pageProps} />
-        <Footer />
+
+        <div className={"bg-ble min-h-screen  scrollbar-w-0px leading-7  py-24  flex flex-col gap-4 text-neutral-300 ss:px-[2vw] sm:px-[4vw] md:px-[6vw] lg:px-[10vw] font-inter-var " + appfont.className}>
+          {/* <Nav /> */}
+          <BaseLayout>
+            <Component {...pageProps} />
+          </BaseLayout>
+          {/* <Footer /> */}
+          {/* <Image  src={BlogTitleBg.src} width={BlogTitleBg.width} height={BlogTitleBg.height}  alt='' className='fixed mx-auto saturation blur-3xl right-0 -bottom-24 m'/> */}
+
+        </div>
       </div>
-      </div>
-</>
+    </>
   );
 };
 
