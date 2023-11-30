@@ -1,13 +1,11 @@
 import BaseLayout from "@/layouts/base-layout";
+import '@unocss/reset/tailwind.css';
 import { DefaultSeo } from "next-seo";
 import { type AppProps } from "next/app";
 import { Inter } from "next/font/google";
+import 'uno.css';
 import "../code-styles.css";
 import "../globals.css";
-import BlogTitleBg from '@/assets/blog-title-bg.png';
-import '@unocss/reset/tailwind.css';
-import 'uno.css';
-import Image from "next/image";
 
 const appfont = Inter({
   subsets: ['latin']

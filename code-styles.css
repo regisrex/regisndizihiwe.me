@@ -3,7 +3,7 @@
 code[class*="language-"],
 pre[class*="language-"] {
     font-size: 14px;
-     font-family: 'Martian Mono' ;
+     font-family: 'Martian Mono',monospace ;
      color: #c5c8c6;
      direction: ltr;
      text-align: left;
@@ -26,16 +26,19 @@ pre[class*="language-"] {
  pre[class*="language-"] {
      padding: 1em;
      margin: 40px 0;
-     font-family: 'Martian Mono' ;
+     font-family: 'Martian Mono', monospace ;
      overflow: auto;
      border-radius: 0.3em;
  }
 
  :not(pre) > code[class*="language-"],
+ .work-div,
  pre[class*="language-"]  {
      background: rgba(112, 128, 144, 0.10);
      border:  1px solid rgba(112, 128, 144, 0.10);
  }
+
+
 
  /* Inline code */
  :not(pre) > code[class*="language-"] {

@@ -1,7 +1,10 @@
+import Footer from '@/components/common/footer'
 import { IconLink } from '@/components/common/icon-link'
 import Nav from '@/components/common/nav'
 import { GithubIcon, TwitterIcon } from '@/components/icons'
+import { fairyDustCursor } from "cursor-effects"
 import { useEffect } from 'react'
+
 export default function BaseLayout({ children }: any) {
     useEffect(() => {
         // document.addEventListener("onload", function() {
@@ -13,17 +16,21 @@ export default function BaseLayout({ children }: any) {
             var rotateX = -mouseY * 10;
             var rotateY = mouseX * 10;
 
-            document.getElementById('bgbck')!.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";
+            document.getElementById('bgbck')!.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";7
+            // new fairyDustCursor()
         });
         //   });
     }, [])
     return (
         <div className='flex'>
-            <div className='sticky top-24 h-fit w-1/2 z-42   px-16'>
+            <div className='sticky top-24 h-fit w-2/5 z-42'>
                 <div className='flex flex-col gap-4 '>
-                    <p className='text-bluish-100 text-4xl font-black'>Regis Rex</p>
+                    <p className='text-bluish-100 text-4xl font-black'>R&eacute;gis N.</p>
                     <p className='text-bluish-100 text-xl font-semibold'>I write code and design experiences.</p>
-                    <p className='text-bluish-200  font-medium'>Engineering at Kurious learn, UX Designer at Xona, @kin-lang core team member,built json-base, co-author of gcommit.</p>
+                    <p className='text-bluish-200  font-medium'>
+                   Teen designer & programmer,<br/> currently working at kurious lean
+
+                        </p>
                 </div>
                 <div className='my-14'>
                     <Nav />
@@ -34,8 +41,12 @@ export default function BaseLayout({ children }: any) {
                     {/* <IconLink href="https://x.com/regissrex"><MastodonIcon /></IconLink> */}
                 </div>
             </div>
-            <div className='w-1/2 z-20'>
+            <div className='w-3/5 z-20'>
                 {children}
+                <div className='py-4'>
+                <Footer />
+
+                </div>
             </div>
             <div className='absolute fixed w-full mx-auto blur-3xl opacity-40'>
                 <svg width="778" height="673" viewBox="0 0 778 673" fill="none" xmlns="http://www.w3.org/2000/svg" id='bgbck' className=''>
