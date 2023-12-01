@@ -7,6 +7,7 @@
 <a href="https://behance.net/nregis">𝒷𝑒𝒽𝒶𝓃𝒸𝑒</a> &nbsp;.&nbsp;
 <a href="https://www.figma.com/@ndizihiweregis">𝒻𝒾𝑔𝓂𝒶</a> &nbsp;.&nbsp;
 <a href="https://app.daily.dev/ndizihiwe">𝒹𝒶𝒾𝓁𝓎.𝒹𝑒𝓋</a> &nbsp;~&nbsp;
+<a href="https://gitstalk.netlify.app/regisrex">𝑔𝒾𝓉𝓈𝓉𝒶𝓁𝓀</a> &nbsp;~&nbsp;
   
 </samp>
 </p>
