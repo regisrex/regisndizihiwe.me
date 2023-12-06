@@ -628,10 +628,10 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/mdx@^2.0.0", "@types/mdx@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/@types/mdx/-/mdx-2.0.8.tgz"
-  integrity sha512-r7/zWe+f9x+zjXqGxf821qz++ld8tp6Z4jUS6qmPZUXH6tfh4riXOhAqb12tWGWAevCFtMt1goLWkQMqIJKpsA==
+"@types/mdx@^2.0.0", "@types/mdx@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@types/mdx/-/mdx-2.0.10.tgz#0d7b57fb1d83e27656156e4ee0dfba96532930e4"
+  integrity sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==
 
 "@types/ms@*":
   version "0.7.32"
