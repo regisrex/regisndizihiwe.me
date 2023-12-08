@@ -6,21 +6,6 @@ import { fairyDustCursor } from "cursor-effects"
 import { useEffect } from 'react'
 
 export default function BaseLayout({ children }: any) {
-    useEffect(() => {
-        // document.addEventListener("onload", function() {
-        document.addEventListener("mousemove", function (e) {
-            console.log(e)
-            var mouseX = e.clientX / window.innerWidth - 0.5;
-            var mouseY = e.clientY / window.innerHeight - 0.5;
-
-            var rotateX = -mouseY * 10;
-            var rotateY = mouseX * 10;
-
-            document.getElementById('bgbck')!.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";7
-            // new fairyDustCursor()
-        });
-        //   });
-    }, [])
     return (
         <div className='flex'>
             <div className='sticky top-24 h-fit w-2/5 z-42'>
