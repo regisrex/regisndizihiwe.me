@@ -2,10 +2,24 @@ import Footer from '@/components/common/footer'
 import { IconLink } from '@/components/common/icon-link'
 import Nav from '@/components/common/nav'
 import { GithubIcon, TwitterIcon } from '@/components/icons'
-import { fairyDustCursor } from "cursor-effects"
 import { useEffect } from 'react'
 
 export default function BaseLayout({ children }: any) {
+    useEffect(() => {
+        // document.addEventListener("onload", function() {
+        document.addEventListener("mousemove", function (e) {
+            console.log(e)
+            var mouseX = e.clientX / window.innerWidth - 0.5;
+            var mouseY = e.clientY / window.innerHeight - 0.5;
+
+            var rotateX = -mouseY * 10;
+            var rotateY = mouseX * 10;
+
+            document.getElementById('bgbck')!.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";7
+            // new fairyDustCursor()
+        });
+        //   });
+    }, [])
     return (
         <div className='flex'>
             <div className='sticky top-24 h-fit w-2/5 z-42'>
@@ -13,23 +27,22 @@ export default function BaseLayout({ children }: any) {
                     <p className='text-bluish-100 text-4xl font-black'>R&eacute;gis N.</p>
                     <p className='text-bluish-100 text-xl font-semibold'>I write code and design experiences.</p>
                     <p className='text-bluish-200  font-medium'>
-                   Teen designer & programmer,<br/> currently working at kurious lean
-
+                        Software designer and developer, currently <br /> brainistoing
                         </p>
                 </div>
                 <div className='my-14'>
                     <Nav />
                 </div>
-                <div className='flex  gap-2 items-center fixe' >
+                {/* <div className='flex  gap-2 items-center fixe' >
                     <IconLink href="https://github.com/regisrex"><GithubIcon /></IconLink>
                     <IconLink href="https://x.com/regissrex"><TwitterIcon /></IconLink>
-                    {/* <IconLink href="https://x.com/regissrex"><MastodonIcon /></IconLink> */}
-                </div>
+                    <IconLink href="https://x.com/regissrex"><MastodonIcon /></IconLink>
+                </div> */}
+                <Footer />
             </div>
             <div className='w-3/5 z-20'>
                 {children}
                 <div className='py-4'>
-                <Footer />
 
                 </div>
             </div>

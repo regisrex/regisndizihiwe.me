@@ -11,6 +11,10 @@ const navLinks = [
         title: 'blog',
         href: '/blog'
     },
+    {
+        title: 'me',
+        href: '/about'
+    },
 ]
 
 
@@ -32,7 +36,7 @@ export default function Nav() {
 
     const checkMatch = (path: typeof router.pathname, selected: typeof navLinks[0]) => {
         if (selected.title == 'home') return path == selected.href
-        if (selected.title == 'blog') return path.includes(selected.href)
+        else return path.includes(selected.href)
     }
     return (    
         <ul>
