@@ -43,13 +43,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       />
       <div>
 
-        <div className={"bg-ble min-h-screen  scrollbar-w-0px leading-7  py-24  flex flex-col gap-4 text-neutral-300 ss:px-[2vw] sm:px-[4vw] md:px-[6vw] lg:px-[10vw] font-inter-var " + appfont.className}>
-          {/* <Nav /> */}
+        <div className={"bg-ble min-h-screen  font-medium scrollbar-w-0px leading-7 py-12  flex flex-col gap-4  sm:px-[2vw] sm:px-[4vw] md:px-[10vw] lg:px-[22vw] font-inter-var " + appfont.className}>
           <BaseLayout>
             <Component {...pageProps} />
           </BaseLayout>
-          {/* <Footer /> */}
-          {/* <Image  src={BlogTitleBg.src} width={BlogTitleBg.width} height={BlogTitleBg.height}  alt='' className='fixed mx-auto saturation blur-3xl right-0 -bottom-24 m'/> */}
 
         </div>
       </div>
