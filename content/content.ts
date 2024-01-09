@@ -15,6 +15,27 @@ const blogs: Blog[] = [
         releaseDate : "Oct 2023",
         tags: ['typescipt', 'backend-development']
     },
+    {
+        title: "The gotcha with useSWR hook",
+        description: "The disadvantage that I met when I first used the useSWR hook",
+        id: "the-swr-hook-gotcha",
+        releaseDate : "Jan 2024",
+        tags: ['typescipt', 'frontend']
+    },
+    {
+        title: "The fetch() api",
+        description: "The API that links apps to the internet",
+        id: "the-fetch()-api",
+        releaseDate : "Jan 2024",
+        tags: ['typescipt', 'frontend']
+    },
+    {
+        title: "Intro to programming - [Within-Tech]",
+        description: "Intro to python - for within-tech noobs",
+        id: "let's-build-things-using-python",
+        releaseDate : "Jan 2024",
+        tags: ['python']
+    },
 
 ]
 

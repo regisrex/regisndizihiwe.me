@@ -34,7 +34,7 @@ pre[class*="language-"] {
  :not(pre) > code[class*="language-"],
  .work-div,
  pre[class*="language-"]  {
-     background: rgb(0, 0, 0);
+     background: rgba(112, 128, 144, 0.10);
      border:  1px solid rgba(112, 128, 144, 0.10);
  }
 
