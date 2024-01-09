@@ -4,7 +4,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h2: ({ children }: any) => <h3 className='text-3xl py-2 font-bold'>{children}</h3>,
     p: ({ children }: any) => <p className='leading-7 font-[20px] text-bluish-200'>{children}</p>,
-    h3: ({ children }: any) => <h3 className='text-2xl py-3 font-bold'>{children}</h3>,
+    h3: ({ children }: any) => <h3 className='text-2xl py-3 font-bold text-bluish-200'>{children}</h3>,
     h4: ({ children }: any) => <h3 className='text-lg py-4 font-semibold'>{children}</h3>,
     hr: () => <div className='border border-white border-opacity-20' ></div>,
     a: ({ children, href }) => <a className='text-blue-300' style={{ color: "#96CBFE" }} href={href}> {children}</a>,

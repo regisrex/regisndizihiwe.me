@@ -43,7 +43,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       />
       <div>
 
-        <div className={"bg-ble min-h-screen  font-medium scrollbar-w-0px leading-7 py-12  flex flex-col gap-4  sm:px-[2vw] sm:px-[4vw] md:px-[10vw] lg:px-[22vw] font-inter-var " + appfont.className}>
+        <div className={"bg-ble min-h-screen color-bluish-200  font-medium scrollbar-w-0px leading-7 py-12  flex flex-col gap-4  sm:px-[2vw] sm:px-[4vw] md:px-[10vw] lg:px-[22vw] font-inter-var " + appfont.className}>
           <BaseLayout>
             <Component {...pageProps} />
           </BaseLayout>
