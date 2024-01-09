@@ -37,12 +37,18 @@ export default function Home() {
         <p className="mb-4">See you!</p>
 
         <div className="my-4 flex gap-4">
+          <a href="https://github.com/regisrex">
+
           <button className="py-2 px-6 bg-bluish-100 rounded-md text-ble">
             My Github
           </button>
+          </a>
+          <a href="https://linkedin.com/in/regisndizihiwe">
+
           <button className="py-2 px-6 border border-bluish-200/10 rounded-md text-bluish-100">
             LinkedIn
           </button>
+          </a>
         </div>
       </div>
     </>
