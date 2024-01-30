@@ -4,7 +4,7 @@ export interface IWork {
   title: string;
   description: string;
   link?: string;
-  type: "web" | "tool" | "package" | "other" | 'mobile'
+  type: "web" | "tool" | "package" | "other" | "mobile";
 }
 
 const WorkIcon = ({ type }: { type: IWork["type"] }) => {
@@ -18,13 +18,11 @@ const WorkIcon = ({ type }: { type: IWork["type"] }) => {
 
 export default function Work(props: IWork) {
   return (
-    <div className="text-bluish-100 p-4 flex  h-fit w-full gap-4 border-bluish-200/10 border rounded-md w-fit  dark:bg-gray-950">
+    <div className="text-bluish-100 p-4 flex  h-full` w-full gap-4 border-bluish-200/10 border rounded-md w-fit  dark:bg-gray-950">
       {/* <WorkIcon type={props.type} /> */}
       <div>
-        <h3 className="font-semibold">{ props.title }</h3>
-        <p className="text-bluish-200 py-1">
-         {props.description}
-        </p>
+        <h3 className="font-semibold">{props.title}</h3>
+        <p className="text-bluish-200 py-1">{props.description}</p>
         {props.link && (
           <a
             href={`https://${props.link}`}

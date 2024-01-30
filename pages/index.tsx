@@ -1,6 +1,3 @@
-import MeImg from "@/assets/me.jpg";
-import { GithubIcon, TwitterIcon } from "@/components/icons";
-import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -12,8 +9,8 @@ export default function Home() {
         className="rounded-full"
         draggable={false}
       /> */}
-      <div className="text-bluish-200 pt-6" id="bgbck">
-        <div className="flex flex-col gap-4 ">
+      <div className="text-bluish-200 pt-" id="bgbck">
+        <div className="flex flex-col gap-10">
           <p className="text-bluish-100 text-4xl font-black">R&eacute;gis N.</p>
           <p className="text-bluish-100 text-xl font-semibold">
             I write code and design experiences.

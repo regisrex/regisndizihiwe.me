@@ -8,6 +8,18 @@ export const works: IWork[] = [
         type: "package",
     },
     {
+        title: "Irumva plots marketplace",
+        description: "A marketplace for plots in Rwanda",
+        link: "irumvacgroup.org",
+        type: "web",
+    },
+    {
+        title: "Abacu.rw",
+        description: "A platform for orbituary stories in Rwanda",
+        link: "abacu.rw",
+        type: "web",
+    },
+    {
         title: "Invictus RMF",
         description: "A management system for the 'Rwanda Road Maintainance' Fund",
         link: "invictus.rmf.gov.rw",
