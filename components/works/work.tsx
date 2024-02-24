@@ -26,7 +26,7 @@ export default function Work(props: IWork) {
         {props.link && (
           <a
             href={`https://${props.link}`}
-            className="flex items-center gap-2 text-blue hover:underline underline-offset-6 underline-blue/30 hover:gap-4 duration-100 "
+            className="flex items-center gap-2 text-white hover:underline underline-offset-6 underline-blue/30 hover:gap-4 duration-100 "
           >
             <span>{props.link} </span> <LinkIcon />
           </a>

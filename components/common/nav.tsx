@@ -50,17 +50,15 @@ export default function Nav() {
         <li key={i}>
           <Link
             href={link.href}
-            className={`flex items-center max-w-[76px] my-2 hover:max-w-[84px] duration-500 gap-4 ${
-              checkMatch(selected, link) && "max-w-[76px]"
-            }`}
+            className={`flex items-center max-w-[76px] my-2 hover:max-w-[84px] duration-500 gap-4 ${checkMatch(selected, link) && "max-w-[76px]"
+              }`}
           >
             {/* <div className={`w-full uppercase  duration-100 h-[2px] ${checkMatch(selected, link) ? 'bg-bluish-100 h-[5px] font-semibold' : 'bg-bluish-200'}`} /> */}
             <span
-              className={`text-sm font-medium uppercase ${
-                checkMatch(selected, link)
+              className={`text-sm font-medium uppercase ${checkMatch(selected, link)
                   ? "text-bluish-100"
                   : "text-bluish-200"
-              }`}
+                }`}
             >
               {link.title}
             </span>

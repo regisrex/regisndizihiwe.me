@@ -6,7 +6,7 @@ import { GithubIcon, TwitterIcon } from "@/components/icons";
 export default function BaseLayout({ children }: any) {
   return (
     <div
-      className="flex flex-col bg-blur-md gap-4 w-full  min-h-screen color-bluish-200 bg-black  selection:bg-white selection:text-black  font-medium scrollbar-w-0px leading-7 py-12  flex flex-col gap-4  sm:px-[2vw] sm:px-[4vw] md:px-[10vw] lg:px-[22vw] font-inter-var bg-top bg-cover bg-center bg-fixed"
+      className="flex flex-col bg-blur-md gap-4 w-full  min-h-screen color-bluish-200  bg-black/90  selection:bg-white selection:text-black  font-medium scrollbar-w-0px leading-7 py-12  flex flex-col gap-4  sm:px-[2vw] sm:px-[4vw] md:px-[10vw] lg:px-[22vw] font-inter-var bg-top bg-cover bg-center bg-fixed"
       style={{
         // backgroundImage: `url(${BBg.src})`,
         backgroundSize: "cover",
