@@ -18,7 +18,7 @@ const WorkIcon = ({ type }: { type: IWork["type"] }) => {
 
 export default function Work(props: IWork) {
   return (
-    <div className="text-bluish-100 p-4 flex  h-full` w-full gap-4 border-bluish-200/10 border rounded-md w-fit  dark:bg-gray-950">
+    <div className="text-bluish-200 p-4  flex  h-full` w-full gap-4 border border-neutral-800 rounded-md  ">
       {/* <WorkIcon type={props.type} /> */}
       <div>
         <h3 className="font-semibold">{props.title}</h3>
@@ -26,7 +26,7 @@ export default function Work(props: IWork) {
         {props.link && (
           <a
             href={`https://${props.link}`}
-            className="flex items-center gap-2 text-white hover:underline underline-offset-6 underline-blue/30 hover:gap-4 duration-100 "
+            className="flex items-center gap-2 text-slate-600 hover:underline underline-offset-6 underline-blue/30 hover:gap-4 duration-100 "
           >
             <span>{props.link} </span> <LinkIcon />
           </a>

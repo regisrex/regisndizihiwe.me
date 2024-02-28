@@ -13,7 +13,7 @@ export default function BlogTitle({
     image,
     language
 }: {
-    id: string
+id: string
     releaseDate: string,
     title: string,
     description: string,

@@ -1,11 +1,11 @@
-import { LinkIcon } from "@/components/icons";
+import T from "@/components/title";
 import Work from "@/components/works/work";
 import { works } from "@/content/works";
 
-export default function WorksPage() {
+export default function Works() {
   return (
     <div>
-      <h2 className="text-2xl my-4  text-bluish-100 font-bold">Works</h2>
+      <T>Works</T>
       <div className="flex flex-col">
         <p className="text-bluish-200">
           I&apos;ve been in this career of software development for 3 years now,

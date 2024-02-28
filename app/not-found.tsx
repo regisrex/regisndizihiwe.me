@@ -1,10 +1,11 @@
+'use client'
 import React from "react";
 
 const NotFoundPage: React.FC = () => {
 
-    const handleGoBack = () => {
-        window.history.back()
-    }
+  const handleGoBack = () => {
+    window.history.back()
+  }
   return (
     <div className="">
       <div className="w-fit h-fit mx-auto text-bluish-200 text-center">
