@@ -18,23 +18,24 @@ export default function BaseLayout({ children }: any) {
         //   });
     }, [])
     return (
-        <div className='flex'>
-            <div className='sticky top-24 h-fit w-1/2 z-42   px-16'>
+        <div className='flex flex-col  max-w-[700px] mx-auto'>
+            <div className=' h-fit z-42'>
                 <div className='flex flex-col gap-4 '>
-                    <p className='text-bluish-100 text-4xl font-black'>Regis Rex</p>
+                    <p className='text-bluish-100 text-4xl font-black'>Regis N.</p>
                     <p className='text-bluish-100 text-xl font-semibold'>I write code and design experiences.</p>
-                    <p className='text-bluish-200  font-medium'>Engineering at Kurious learn, UX Designer at Xona, @kin-lang core team member,built json-base, co-author of gcommit.</p>
+                    <p className='text-bluish-200  font-medium'>Software developer and designer, currently revamping scriptylabs.</p>
+                    <div className='flex  flex gap-2 items-center fixe' >
+                        <IconLink href="https://github.com/regisrex"><GithubIcon /></IconLink>
+                        <IconLink href="https://x.com/regissrex"><TwitterIcon /></IconLink>
+                        {/* <IconLink href="https://x.com/regissrex"><MastodonIcon /></IconLink> */}
+                    </div>
                 </div>
+                <hr className='my-4 opacity-10' />
                 <div className='my-14'>
                     <Nav />
                 </div>
-                <div className='flex  gap-2 items-center fixe' >
-                    <IconLink href="https://github.com/regisrex"><GithubIcon /></IconLink>
-                    <IconLink href="https://x.com/regissrex"><TwitterIcon /></IconLink>
-                    {/* <IconLink href="https://x.com/regissrex"><MastodonIcon /></IconLink> */}
-                </div>
             </div>
-            <div className='w-1/2 z-20'>
+            <div className='z-20'>
                 {children}
             </div>
             <div className='absolute fixed w-full mx-auto blur-3xl opacity-40'>
