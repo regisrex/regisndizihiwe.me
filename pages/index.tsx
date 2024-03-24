@@ -17,7 +17,7 @@ export default function Home() {
           />
           {/* <p className="text-bluish-100 text-4xl font-black">R&eacute;gis N.</p> */}
           <p className="text-bluish-100 text-4xl font-semibold" style={libre.style}>
-            Hey👋! I'm Regis, I'm a software engineer, a designer, a mentor and a lot more.
+            Hey👋! I&apos;m Regis, I&apos;m a software engineer, a designer, a mentor and a lot more.
           </p>
         </div>
 
