@@ -16,7 +16,7 @@ export default defineConfig({
     presetIcons(),
     presetTypography(),
     presetScrollbar({
-      scrollbarWidth : '0px'
+      scrollbarWidth: '0px'
     }),
     presetWebFonts({
     }),
@@ -25,8 +25,8 @@ export default defineConfig({
     colors: {
       ble: '#070A17',
       bluish: {
-        '100': '#E2E8F0',
-        '200': '#B1C1D9'
+        '100': '#000',
+        '200': '#000'
       }
     }
   }

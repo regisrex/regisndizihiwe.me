@@ -2,12 +2,12 @@ import BaseLayout from "@/layouts/base-layout";
 import "@unocss/reset/tailwind.css";
 import { DefaultSeo } from "next-seo";
 import { type AppProps } from "next/app";
-import { Inter } from "next/font/google";
-import "uno.css";
+import { Wix_Madefor_Text } from "next/font/google";
+// import "uno.css";
 import "../code-styles.css";
 import "../globals.css";
 
-const appfont = Inter({
+const appfont = Wix_Madefor_Text({
   subsets: ["latin"],
 });
 

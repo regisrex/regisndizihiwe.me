@@ -1,22 +1,23 @@
-import MeImg from "@/assets/me.jpg";
-import { GithubIcon, TwitterIcon } from "@/components/icons";
-import Image from "next/image";
+import MeImg from '@/assets/me.jpg';
+import { Rakkas } from "next/font/google";
+const libre = Rakkas({ subsets: ['latin'], weight: '400' })
 export default function Home() {
   return (
     <>
-      {/* <Image
-        src={MeImg.src}
-        alt=""
-        width={60}
-        height={60}
-        className="rounded-full"
-        draggable={false}
-      /> */}
-      <div className="text-bluish-200 pt-6" id="bgbck">
-        <div className="flex flex-col gap-4 ">
-          <p className="text-bluish-100 text-4xl font-black">R&eacute;gis N.</p>
-          <p className="text-bluish-100 text-xl font-semibold">
-            I write code and design experiences.
+      <div className="text-bluish-200 pt-6 flex  flex-col gap-1 min-h-[80vh]">
+        <div className="flex items-center gap-4 ">
+
+          <img
+            src={MeImg.src}
+            alt=""
+            width={60}
+            height={60}
+            className="object-cover w-[140px] h-[140px] rounded-2xl border border-white/10 rotate-45"
+            draggable={false}
+          />
+          {/* <p className="text-bluish-100 text-4xl font-black">R&eacute;gis N.</p> */}
+          <p className="text-bluish-100 text-4xl font-semibold" style={libre.style}>
+            Hey👋! I'm Regis, I'm a software engineer, a designer, a mentor and a lot more.
           </p>
         </div>
 
@@ -39,15 +40,15 @@ export default function Home() {
         <div className="my-4 flex gap-4">
           <a href="https://github.com/regisrex">
 
-          <button className="py-2 px-6 bg-bluish-100 rounded-md text-ble">
-            My Github
-          </button>
+            <button className="py-2 px-6 bg-white rounded-full  text-ble">
+              GitHub
+            </button>
           </a>
           <a href="https://linkedin.com/in/regisndizihiwe">
 
-          <button className="py-2 px-6 border border-bluish-200/10 rounded-md text-bluish-100">
-            LinkedIn
-          </button>
+            <button className="py-2 px-6 border border-bluish-200/10  rounded-full text-bluish-100">
+              LinkedIn
+            </button>
           </a>
         </div>
       </div>
