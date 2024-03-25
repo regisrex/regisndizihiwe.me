@@ -5,51 +5,44 @@
 @tailwind utilities;
 
 :root {
-    /* Your default theme */
-    --background: white;
-    --foreground: black;
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
 }
 
 [data-theme='dark'] {
-    --background: black;
-    --foreground: white;
+  --background: black;
+  --foreground: white;
 }
-
-
 
 html,
 body {
-    color: #000;
-    background: #fff;
-    scroll-behavior: smooth;
+  color: #000;
+  background: #fff;
+  scroll-behavior: smooth;
 }
 
 [data-theme='dark'],
 [data-theme='dark'] body {
-    color: #fff;
-    background: #000;
+  color: #fff;
+  background: #000;
 }
 
-
-
 a {
-    padding: 2px;
+  padding: 2px;
 }
 
 .font-inter {
-    font-family: 'Intervar';
+  font-family: 'Intervar';
 }
-
 
 @font-face {
-    font-family: Intervar;
-    src: url('./assets/inter-var.woff2');
+  font-family: Intervar;
+  src: url('./assets/inter-var.woff2');
 }
 
-
-
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 p,
@@ -66,26 +59,26 @@ li,
 span,
 pre,
 code {
-    animation: fadelineup 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: fadelineup 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes fadelineup {
-    0% {
-        opacity: 0;
-        transform: translateY(10%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
 
-    20% {
-        opacity: 0.2;
-    }
+  20% {
+    opacity: 0.2;
+  }
 
-    50% {
-        opacity: 0.8;
-        transform: translateY(0%);
-    }
+  50% {
+    opacity: 0.8;
+    transform: translateY(0%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

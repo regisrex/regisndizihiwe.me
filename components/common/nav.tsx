@@ -50,7 +50,7 @@ export default function Nav() {
     else return path.includes(selected.href);
   };
   return (
-    <Pad className="grid grid-cols-3 items-center justify-between border-b border-bluish-100/10 py-4">
+    <Pad className="grid grid-cols-3 items-center justify-between border-b border-bluish-100/10 py-4 sticky top-0 z-50 bg-black/60 backdrop-blur-md">
 
 
       <ul className="flex items-center gap-2 justify-start">
@@ -64,7 +64,7 @@ export default function Nav() {
             >
               {/* <div className={`w-full uppercase  duration-100 h-[2px] ${checkMatch(selected, link) ? 'bg-bluish-100 h-[5px] font-semibold' : 'bg-bluish-200'}`} /> */}
               <span
-                className={`text-sm font-medium uppercase ${checkMatch(selected, link)
+                className={`text-sm font-medium capitalize ${checkMatch(selected, link)
                   ? "text-bluish-100"
                   : "text-bluish-200"
                   }`}
@@ -75,8 +75,8 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <span className="font-bold tracking-widest text-white opacity-70 uppercase text-center w-full" style={inter.style}>
-       - Regis NDIZIHIWE -
+      <span className="font-bold tracking-widest text-transparent bg-clip-text  bg-gradient-to-br from-blue-500 via-gray-500 to-red-500 opacity-70  text-center w-ful l" style={inter.style}>
+        - Regis NDIZIHIWE -
       </span>
       <div className="flex  gap-2 items-center justify-end">
         <IconLink href="https://github.com/regisrex">

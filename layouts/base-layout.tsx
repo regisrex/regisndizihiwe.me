@@ -1,4 +1,3 @@
-import BlurImg from "@/assets/blur.png";
 import Footer from "@/components/common/footer";
 import Nav from "@/components/common/nav";
 import Pad from "./pad";
@@ -15,7 +14,7 @@ export default function BaseLayout({ children }: any) {
     >
       <div className=" flex flex-col justify-between z-20">
         <Nav />
-        <Pad className="">
+        <Pad className="mb-10">
           {children}
         </Pad>
         <Footer />
